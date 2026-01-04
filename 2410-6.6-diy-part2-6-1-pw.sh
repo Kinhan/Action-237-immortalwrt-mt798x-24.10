@@ -26,7 +26,4 @@ sed -i 's|IMG_PREFIX:=|IMG_PREFIX:=$(shell TZ="Asia/Shanghai" date +"%Y%m%d")-PW
 #sed -i '$a\\sleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
 
 
-# 1. 强制替换 Golang 源码为最新的 1.24 版本
-rm -rf feeds/packages/lang/golang
-# 使用 sbwml 大佬维护的 golang 仓库，切换到 24.x 分支
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+
