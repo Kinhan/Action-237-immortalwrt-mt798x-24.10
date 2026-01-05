@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: RUN IN BRANCH 23.05! 360T7 Build immortalwrt23.05 Latest Passwall+Xray 
+name: 360T7 23.05-5.4 Latest Passwall+Xray
 
 on:
   repository_dispatch:
@@ -67,7 +67,7 @@ jobs:
     - name: Update feeds
       run: |
          cd openwrt
-         ./scripts/feeds update -a 
+         ./scripts/feeds update -a
          # rm -rf feeds/luci/applications/luci-app-mosdns
          # rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
          # rm -rf feeds/packages/utils/v2dat
@@ -77,8 +77,8 @@ jobs:
 
     - name: Install feeds
       run: |
-        cd openwrt
-        ./scripts/feeds install -a 
+        cd openwrt && ./scripts/feeds install -a
+
          
     - name: Load custom configuration
       run: |

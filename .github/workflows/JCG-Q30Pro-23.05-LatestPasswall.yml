@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: RUN IN BRANCH 23.05! JCG Q30PRO Build immortalwrt23.05 Latest Passwall+Xray
+name: JCG Q30Pro 23.05-5.4 Latest Passwall+Xray
 
 on:
   repository_dispatch:
